@@ -1,0 +1,47 @@
+{
+  "name": "experimentesammlung",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "electron-builder": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "index.html",
+    "willkommen.html",
+    "Themen/**/*",
+    "Experimente/**/*"
+  ],
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.experimentesammlung.app",
+    "productName": "Experimentesammlung",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "Bilder/fachschaft_logo.ico"
+    },
+    "mac": {
+      "target": [
+        "zip", "dmg"
+      ],
+      "category": "public.app-category.education",
+      "icon": "Bilder/fachschaft_logo.icns"
+    }
+  },
+  "description": "Eine portable Experimentesammlung."
+}

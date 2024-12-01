@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: powderblue;
+    color: black;
+    padding: 10px 20px;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.logo {
+    height: 150px;
+}
+
+.left {
+    float: left;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul, section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li, section li {
+    margin-bottom: 10px;
+}
+
+aside a, section a {
+    text-decoration: none;
+    color: #005f73;
+}
+
+aside a:hover, section a:hover {
+    text-decoration: underline;
+}
+
+section {
+    width: 80%;
+    padding: 20px;
+}
+
+.logo-center {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo-center img {
+    max-width: 500px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: powderblue;
+    color: black;
+}
+
+.experiment-container {
+    display: block;
+    margin: 20px 0;
+}
+
+.experiment-text {
+    margin-bottom: 20px;
+}
+
+.experiment-image {
+    text-align: center;
+}
+
+.experiment-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.experiment-image figcaption {
+    margin-top: 10px;
+    color:black;
+}
+
+/* Stile für Listen mit ein oder zwei Spalten */
+
+.one-column-list {
+    display: block;
+    list-style-type: disc;
+    padding: 0;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.two-column-list {
+    display: flex;
+    list-style-type: disc;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.two-column-list li {
+    width: calc(50% - 10px);
+}
+
